@@ -22,7 +22,7 @@ def scrape():
    mars_data = scraping.scrape_all()
    # reviewed at office hours to fine updated way of writing this piece of code.
    mars.update_many({},{"$set":mars_data} , upsert=True)
-   return redirect('/', code=302), mars_data
+   return redirect('/', code=302)
 
 if __name__ == "__main__":
    app.run()

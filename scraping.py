@@ -125,7 +125,7 @@ def image_urls(browser):
 
         img_url=partial_url+photos_url
         hemisphere_dict={"img_url":img_url,"title":title}
-        hemisphere_image_urls.append(hemis_dict)
+        hemisphere_image_urls.append(hemisphere_dict)
         browser.back()
         
         print(f"loop {i}")
